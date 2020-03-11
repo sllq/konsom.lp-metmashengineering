@@ -1103,11 +1103,6 @@ section .heading h4 {
     color:white;
 }
 
-section .center-text{
-    text-align: center !important;
-}
-
-
 @media (min-width: 801px) and (max-width: 1337px) {
     body > div.content-wrapper > div.content {
       display: block;
@@ -1451,4 +1446,7 @@ section .col {
     -ms-flex-positive: 1;
     flex-grow: 1;
     max-width: 100%;
+    align-items: center;
+    display: flex;
+    text-align: inherit;
 }
