@@ -1042,13 +1042,17 @@ section .container-wrapper {
 }
 
 section .col-sm p {
-    text-align: left;
+    text-align: inherit;
     position: relative;
     padding: inherit;
     /* margin: auto; */
     display: flex;
     align-items: center;
 }
+
+section .text-left {text-align: left;}
+section .text-justify {text-align: justify;}
+section .text-center {text-align: center;}
 
 @media screen and (max-width: 500px) { 
     section p {font-size: 1rem;}
@@ -1059,6 +1063,11 @@ section .col-sm p {
 
 section .blackout {
     background-color: #4f4f51;
+    color: white;
+}
+
+section .blackout-strong {
+    background-color: #57595b;
     color: white;
 }
 
