@@ -100,7 +100,7 @@ section h3 {
     font-size: 24px;
     font-weight: 500;
     line-height: 26px;
-    margin: 0.75rem;
+    margin: 0.75rem auto;
 }
 
 section h4 {
@@ -1402,7 +1402,7 @@ section .separator {
 
 /* backgronds for headings */
 
-section .heading1 {background-image: url("../img/headingph.png");}
+section .heading1 {background-image: url("../img/headingph.png") !important;}
 section #heading2 {background-image: url("../img/siemens_headings/heading2.png");}
 section #heading3 {background-image: url("../img/siemens_headings/heading3.png");}
 section #heading4 {background-image: url("../img/siemens_headings/heading4.png");}
@@ -1448,7 +1448,7 @@ section .col {
     max-width: 100%;
     align-items: center;
     display: flex;
-    text-align: inherit;
-    margin: 0.75rem;
     position: relative;
+    text-align: inherit;
+    margin: 0.5rem 0.25rem 0 0.25rem;
 }
