@@ -1402,7 +1402,7 @@ section .separator {
 
 /* backgronds for headings */
 
-section #heading1 {background-image: url("../img/siemens_headings/heading1.png");}
+section .heading1 {background-image: url("../img/headingph.png");}
 section #heading2 {background-image: url("../img/siemens_headings/heading2.png");}
 section #heading3 {background-image: url("../img/siemens_headings/heading3.png");}
 section #heading4 {background-image: url("../img/siemens_headings/heading4.png");}
