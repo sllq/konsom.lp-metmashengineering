@@ -1,5 +1,9 @@
 /* Tabs
 ----------------------------------------------- */
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
 #tabs > ul {
 	display: table;
 	max-width: 639px;
