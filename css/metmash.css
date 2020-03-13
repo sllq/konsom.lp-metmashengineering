@@ -787,7 +787,7 @@ section #contacts .col-sm img {
         margin:0.4em auto;
         width:80%;
     }
-    section  .mobile-hidden {
+    section .mobile-hidden {
         display: none;
     }
     section .heading h1 {
@@ -930,6 +930,10 @@ section div.relative-about p {
     padding-top:1rem;
 }
 
+section div.relative-about p:first-of-type {
+    padding-top: 0;
+}
+
 section .relative-slider
 {
     display: block;
@@ -1045,7 +1049,7 @@ section .col-sm p {
     text-align: inherit;
     position: relative;
     padding: inherit;
-    /* margin: auto; */
+    margin: auto 0;;
     display: flex;
     align-items: center;
 }
@@ -1099,7 +1103,7 @@ section .flex-hack {
     color:#fc8e40;
 }
 
-section .heading h4 {
+section .heading h3,h4 {
     color:white;
 }
 
@@ -1243,41 +1247,70 @@ section li {
 font-size:16px
 }
 
-details summary::-webkit-details-marker {
-display: none !important;
+section details summary::-webkit-details-marker {
+    display: none !important;
 }
-details > summary {
-list-style: none !important;
+section details > summary {
+    list-style: none !important;
+    outline: none;
 }
 
-details summary:before {
+section details summary:before {
     display: none !important;
 }
 
-details[open] summary:before {
+section details[open] summary:before {
     display: none !important;
 }
 
+section details[open] summary ~ * {
+    animation: sweep .8s ease-in-out;
+  }
+  
+  @keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 0px}
+  }
 
-details summary:after {
-content: '▼' !important;
-display: flex !important;
-color: #2a91d8 !important;
-margin: auto;
-font-size: 48px !important;
+
+section details summary:after {
+    content: '▼' !important;
+    display: flex !important;
+    color: #2a91d8 !important;
+    margin: auto;
+    font-size: 38px !important;
+    outline: none;
+    margin-right: 1rem;
 }
 
-details[open] summary:after {
-content: '◄' !important;
-display: flex !important;
-color: #2a91d8 !important;
-margin: auto;
-font-size: 48px !important;
+section details[open] summary:after {
+    /* content: '◄' !important; */
+    display: flex !important;
+    color: #2a91d8 !important;
+    font-size: 38px !important;
+    margin: auto;
+    /* animation-name: dropdown; */
+    animation-duration: 3s;
+    transition-duration: 0.8s;
+    transition-property: transform;
+    transform: rotate(0deg);
+    outline: none;
+    margin-right: 1rem;
+}
+
+section details:not([open]) summary:after {
+    transform: rotate(90deg);
+    animation-duration: 3s;
+    transition-duration: 0.8s;
+    transition-property: transform;
+    outline: none;
+    margin-right: 1rem;
 }
 
 section details {
     cursor: pointer;
     flex: 100%;
+    outline: none;
 }
 
 section summary {
@@ -1456,4 +1489,36 @@ section .col {
     text-align: inherit;
     margin: 0.5rem 0.25rem 0 0.25rem;
     padding: 0.5rem;   
+    z-index: 0;
+}
+
+section .col-extra-margin {
+    padding: 1.5rem;
+    margin: 1.5rem 2.25rem 0 2.25rem
+}
+
+section .container-fluid {
+    flex: 1 100%;
+}
+
+section .counter {
+    counter-reset: section;
+}
+
+section .number-card::before {
+    position: absolute;
+    display: inline-block;
+    top: -15px;
+    left: -25px;
+    width: 50px;
+    text-align: center;
+    padding: 0.1rem;
+    font-size: 36px;
+    border: 1px solid black;
+    color: #2a68a5 !important;
+    background-color: white;
+    font-weight: 600;
+    counter-increment: section;
+    content: counters(section, ".") " ";
+    z-index: 1;
 }

@@ -115,3 +115,9 @@ body div::-webkit-scrollbar-track {
         border-left: 0;
     }
 }
+
+section .heading h1,h2 {
+    color: #fc8e40 !important;
+}
+
+@media screen and (min-width:899px) {.desktop-hidden {display: none;}}
