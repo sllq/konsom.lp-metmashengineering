@@ -108,3 +108,10 @@ body::-webkit-scrollbar-track,
 body div::-webkit-scrollbar-track {
   background: rgb(79, 79, 81);
 }
+
+@media screen and (max-width: 800px) {
+    .menu-subheader li {
+        display: table-header-group;
+        border-left: 0;
+    }
+}
