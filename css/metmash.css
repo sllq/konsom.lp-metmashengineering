@@ -1436,6 +1436,10 @@ section div.cool-heading-background:after {
     z-index: 0;
 }
 
+section div.cool-heading-background:hover {
+    cursor: pointer;
+}
+
 section #caption p {
     text-align: center !important;
 }
@@ -1451,4 +1455,5 @@ section .col {
     position: relative;
     text-align: inherit;
     margin: 0.5rem 0.25rem 0 0.25rem;
+    padding: 0.5rem;   
 }
