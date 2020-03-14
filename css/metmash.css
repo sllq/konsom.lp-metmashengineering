@@ -20,7 +20,7 @@ body > div.footer  {
 
 section p {
     line-height: 2rem !important;
-    margin-top: 0 !important;
+    /* margin-top: 0 !important; */
     /* text-indent: 2rem; */
     font-size: 16px;
 }
@@ -365,6 +365,10 @@ section .no-border {
 
 section .no-margin {
     margin: 0 !important;
+}
+
+section .no-padding {
+    padding: 0 !important;
 }
 
 section .wide-block {
@@ -976,31 +980,31 @@ section .container-wrapper {
 }
 
 .w-80 {
-    width: 80%;
+    min-width: 80%;
 }
 
 .w-70 {
-    width: 70%;
+    min-width: 70%;
 }
 
 .w-60 {
-    width: 60%;
+    min-width: 60%;
 }
 
 .w-50 {
-    width: 50%;
+    min-width: 50%;
 }
 
 .w-40 {
-    width: 40%;
+    min-width: 40%;
 }
 
 .w-30 {
-    width: 30%;
+    min-width: 30%;
 }
 
 .w-20 {
-    width: 20%;
+    min-width: 20%;
 }
 
 @media screen and (max-width: 1200px) { 
@@ -1049,8 +1053,8 @@ section .col-sm p {
     text-align: inherit;
     position: relative;
     padding: inherit;
-    margin: auto 0;;
-    display: flex;
+    margin: auto 0;
+    /* display: flex; */
     align-items: center;
 }
 
@@ -1521,4 +1525,17 @@ section .number-card::before {
     counter-increment: section;
     content: counters(section, ".") " ";
     z-index: 1;
+}
+
+section .flex-4 {
+    flex: 1 1 20%;
+    display: inline-block;
+}
+
+section .row-flex {
+    display: flex;
+}
+
+@media screen and (max-width:600px) {
+    section .flex-4 {flex:1 1 100%}
 }
