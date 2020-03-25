@@ -954,6 +954,11 @@ section .wrap-100 {
     flex: 100% !important;
 }
 
+section .flex-column {
+    flex-wrap: wrap;
+    flex-flow: column;
+}
+
 /*upper menu fix for small screen*/
 @media screen and (max-width: 800px) { 
     section .col-sm span {
@@ -1539,4 +1544,13 @@ section .row-flex {
 
 @media screen and (max-width:600px) {
     section .flex-4 {flex:1 1 100%}
+}
+
+section .float {
+    display: block;
+    float: left;
+}
+
+section .tabs-about {
+    padding: 0.5rem;
 }

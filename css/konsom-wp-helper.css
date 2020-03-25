@@ -3,7 +3,6 @@
 html {
     font-family: 'Open Sans', sans-serif;
 }
-
 #tabs > ul {
 	display: table;
 	max-width: 639px;
@@ -121,3 +120,28 @@ section .heading h1,h2 {
 }
 
 @media screen and (min-width:899px) {.desktop-hidden {display: none;}}
+
+section .btn {
+    color: #fff;
+    cursor: pointer;
+	margin: 0.2rem;
+	border-color: #4f4f51;
+	background-color: #4f4f51;
+	width: 100%;
+	text-align: justify;
+}
+
+section .w3-red {
+	border-color: #fc8e40;
+    background-color: #fc8e40;
+}
+
+body > div.content-wrapper > div.content .column-left ul:not(.menus) li:before,
+body > div.content-wrapper > div.content .column-right ul:not(.menus) li:before,
+body > div.content-wrapper > div.content.content-wide ul:not(.menus) li:before,
+#fancybox-content ul li:before {
+  content: "\BB";
+  padding-right: 5px;
+  font-weight: bold;
+  color: #fc8e40;
+}

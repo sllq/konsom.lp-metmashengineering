@@ -23,6 +23,16 @@
     <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
     <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
 </head>
+<div class="mobile-hidden menu-siemens-container">
+    <ul id="menu-siemens" class="menus menu-subheader">
+        <li id="menu-item-8733" class="menu-item menu-item-type-post_type menu-item-object-page  page_item page-item-8432 current_page_item menu-item-8733"><a href="./1">МЕТАЛЛУРГМАШ Инжиниринг</a></li>
+        <li id="menu-item-8459" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="./2">ТЕХНОЛОГИЧЕСКИЙ АУДИТ И ТЕХНИЧЕСКИЙ КОНСАЛТИНГ</a></li>
+        <li id="menu-item-8460" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item"><a href="./3">ПРЕДПРОЕКТНЫЙ ИНЖИНИРИНГ</a></li>
+        <li id="menu-item-8460" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="./4">ПРОЕКТИРОВАНИЕ МЕТАЛЛУРГИЧЕСКОГО ОБОРУДОВАНИЯ</a></li>
+        <li id="menu-item-8460" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="./5">НАУЧНО-ИССЛЕДОВАТЕЛЬСКИЕ И ОПЫТНО-КОНСТРУКТОРСКИЕ РАБОТЫ</a></li>
+        <li id="menu-item-8460" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="./6">ПОСТАВКА ТЕХНОЛОГИЧЕСКОГО ОБОРУДОВАНИЯ</a></li>
+    </ul>
+</div>
 <section>
     <div class="wrap">
         <div class="heading">
@@ -93,30 +103,55 @@
             <h1>Виды выполняемых работ</h1>
         </div>
         <div class="container-wrapper">
-            <div id="" class="container wrap-100">
-                <details class="w-50">
-                    <summary>
-                        <div class="container">
-                            <div><p>Экспертная оценка существующих технологий, оборудования, организации сталеплавильного и прокатного производства</p></div>
-                        </div>
-                    </summary>
-                <div class="container w-50" style="float:right;">
-                    <p>Независимая оценка и анализ существующих
-                        технологий, оборудования, организации производства на соответствие перспективным планам развития предприятия</p>
-                    <p>
-                            Объективная оценка возможности снижения 
-                            издержек производства за счёт корректировки существующих технологий и/или внедрение новых, модернизации имеющегося оборудования, корректировки организации производства
-                        </p>
-                        <p>
-                            Проработка вариантов возможности 
-                            получения дополнительных доходов от увеличения объёмов производства, улучшения качества и снижения себестоимости продукции
-                        </p>
+            <div class="container wrap-100">
+                <div id="tabs-head" class="container w-50 float">
+                    <button class="btn tablink w3-red" onclick="openTab(event, 'tab-1')"><p>Экспертная оценка существующих технологий, оборудования, организации сталеплавильного и прокатного производства</p></button>
+                    <button class="btn tablink" onclick="openTab(event, 'tab-2')"><p>Разработка плана модернизации сталеплавильного и прокатного производства для перспективного развития предприятия</p></button>
+                    <button class="btn tablink" onclick="openTab(event, 'tab-3')"><p>Разработка технологии, технологических решений, подбор необходимого оборудования, сырья и материалов</p></button>
+                    <button class="btn tablink" onclick="openTab(event, 'tab-4')"><p>Выполнение мероприятий рабочего плана внедрения технологий и/или модернизации производства</p></button>
+                    <button class="btn tablink" onclick="openTab(event, 'tab-5')"><p>Подтверждение результатов, полученных в процессе внедрения технологий и/или модернизации производства</p></button>
+                    <button class="btn tablink" onclick="openTab(event, 'tab-6')"><p>Выполнение мероприятий для гарантированного сохранения результатов внедрения современных и инновационных технологий</p></button>
                 </div>
-                </details>
-
+                <div class="container w-50 float">
+                    <div id="tab-1" class="tab tabs-about">
+                        <p>Независимая оценка и анализ существующих технологий, оборудования, организации производства на соответствие перспективным планам развития предприятия</p>
+                        <p>Объективная оценка возможности снижения издержек производства за счёт корректировки существующих технологий и/или внедрение новых, модернизации имеющегося оборудования, корректировки организации производства</p>
+                        <p>Проработка вариантов возможности получения дополнительных доходов от увеличения объёмов производства, улучшения качества и снижения себестоимости продукции</p>
+                    </div>
+                </div>
+                <div class="container w-50 float" >
+                    <div id="tab-2" class="tab tabs-about" style="display:none">
+                        <p>Разработка технического задания на модернизацию производства</p>
+                        <p>Согласование плановых показателей модернизации производства с планами перспективного развития предприятия</p>
+                        <p>Разработка рабочего плана мероприятий по модернизации производства</p>
+                    </div>
+                </div>
+                <div class="container w-50 float" >
+                    <div id="tab-3" class="tab tabs-about" style="display:none">
+                        <p>Корректировка существующих технологий и/или внедрение новых, обеспечивающих получение результатов в соответствии с планами перспективного развития предприятия </p>
+                        <p>Согласование плановых показателей модернизации производства с планами перспективного развития предприятия</p>
+                        <p>Разработка рабочего плана мероприятий по модернизации производства</p>
+                    </div>
+                </div>
+                <div class="container w-50 float" >
+                    <div id="tab-4" class="tab tabs-about" style="display:none">
+                        <p>Написание и корректировка технологической и организационно-распорядительной документации производства </p>
+                        <p>Теоретическое и практическое обучение, специальная подготовка персонала без отрыва от производства или по согласованной программе</p>
+                    </div>
+                </div>
+                <div class="container w-50 float" >
+                    <div id="tab-5" class="tab tabs-about" style="display:none">
+                        <p>Проведение гарантийных испытаний</p>
+                    </div>
+                </div>
+                <div class="container w-50 float" >
+                    <div id="tab-6" class="tab tabs-about" style="display:none">
+                        <p>Разработка эффективной системы планирования и контроля технических и экономических показателей производства</p>
+                        <p>Достижение соответствующего уровня профессиональной подготовки персонала</p>
+                        <p>Обеспечение технологической поддержки после выполнения работ </p>
+                    </div>
+                </div>
             </div>
-
-
             </div>
         </div>
         <!--contact-->
@@ -136,4 +171,19 @@
         </div>
     <!--wrap-->
     </div>
+    <script>
+        function openTab(evt, cityName) {
+          var i, x, tablinks;
+          x = document.getElementsByClassName("tab");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" w3-red", ""); 
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " w3-red";
+        }
+    </script>
 </section>
