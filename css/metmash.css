@@ -1554,3 +1554,10 @@ section .float {
 section .tabs-about {
     padding: 0.5rem;
 }
+
+
+section .row a {
+    display: contents;
+    color: inherit;
+    text-decoration: none;
+}
