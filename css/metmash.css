@@ -993,6 +993,7 @@ section .container-wrapper {
 
 .w-50 {
     min-width: 50%;
+    width: 50%;
 }
 
 .w-40 {
